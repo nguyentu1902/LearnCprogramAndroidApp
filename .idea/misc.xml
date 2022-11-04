@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/FB/app/src/main/res/drawable-v24/bg_basic_course.xml" value="0.17604166666666668" />
+        <entry key="..\:/FB/app/src/main/res/drawable-v24/bg_btn_dialog_confirm_email.xml" value="0.2703125" />
+        <entry key="..\:/FB/app/src/main/res/drawable-v24/bg_top_dialog_confirm_email.xml" value="0.2703125" />
+        <entry key="..\:/FB/app/src/main/res/drawable-v24/ic_back_white.xml" value="0.19444444444444445" />
+        <entry key="..\:/FB/app/src/main/res/drawable-v24/ic_email.xml" value="0.16666666666666666" />
+        <entry key="..\:/FB/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1796875" />
+        <entry key="..\:/FB/app/src/main/res/drawable-v24/ic_name.xml" value="0.16666666666666666" />
+        <entry key="..\:/FB/app/src/main/res/drawable-v24/navigation_home.xml" value="0.17395833333333333" />
+        <entry key="..\:/FB/app/src/main/res/drawable-v24/navigation_profile.xml" value="0.17395833333333333" />
+        <entry key="..\:/FB/app/src/main/res/drawable-v24/navigation_study.xml" value="0.17395833333333333" />
+        <entry key="..\:/FB/app/src/main/res/drawable/bg_basic_course1.xml" value="0.15989583333333332" />
+        <entry key="..\:/FB/app/src/main/res/drawable/bg_dialog_confirm_email.xml" value="0.2703125" />
+        <entry key="..\:/FB/app/src/main/res/drawable/ic_age.xml" value="0.15416666666666667" />
+        <entry key="..\:/FB/app/src/main/res/drawable/ic_back.xml" value="0.16354166666666667" />
+        <entry key="..\:/FB/app/src/main/res/drawable/ic_contact_mail.xml" value="0.15416666666666667" />
+        <entry key="..\:/FB/app/src/main/res/drawable/ic_infor_device.xml" value="0.15416666666666667" />
+        <entry key="..\:/FB/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1796875" />
+        <entry key="..\:/FB/app/src/main/res/drawable/ic_login_bk.xml" value="0.26296296296296295" />
+        <entry key="..\:/FB/app/src/main/res/drawable/ic_logout.xml" value="0.15416666666666667" />
+        <entry key="..\:/FB/app/src/main/res/drawable/ic_menu.xml" value="0.17395833333333333" />
+        <entry key="..\:/FB/app/src/main/res/drawable/ic_password.xml" value="0.16666666666666666" />
+        <entry key="..\:/FB/app/src/main/res/drawable/ic_username.xml" value="0.16666666666666666" />
+        <entry key="..\:/FB/app/src/main/res/drawable/img_code.xml" value="0.17916666666666667" />
+        <entry key="..\:/FB/app/src/main/res/drawable/login_shape_bk.xml" value="0.16666666666666666" />
+        <entry key="..\:/FB/app/src/main/res/drawable/toolbar_detail_study.xml" value="0.15677083333333333" />
+        <entry key="..\:/FB/app/src/main/res/layout/activity_dangky.xml" value="0.264" />
+        <entry key="..\:/FB/app/src/main/res/layout/activity_data_type.xml" value="0.25416666666666665" />
+        <entry key="..\:/FB/app/src/main/res/layout/activity_home.xml" value="0.25416666666666665" />
+        <entry key="..\:/FB/app/src/main/res/layout/activity_input_output.xml" value="0.14375" />
+        <entry key="..\:/FB/app/src/main/res/layout/activity_learn.xml" value="0.2" />
+        <entry key="..\:/FB/app/src/main/res/layout/activity_login.xml" value="0.264" />
+        <entry key="..\:/FB/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/FB/app/src/main/res/layout/activity_splash_screen.xml" value="0.264" />
+        <entry key="..\:/FB/app/src/main/res/layout/bc_activity_array1.xml" value="0.25416666666666665" />
+        <entry key="..\:/FB/app/src/main/res/layout/bc_activity_array2.xml" value="0.25416666666666665" />
+        <entry key="..\:/FB/app/src/main/res/layout/bc_activity_condition.xml" value="0.1" />
+        <entry key="..\:/FB/app/src/main/res/layout/bc_activity_data_type.xml" value="0.22022955523672882" />
+        <entry key="..\:/FB/app/src/main/res/layout/bc_activity_function.xml" value="0.19717171717171716" />
+        <entry key="..\:/FB/app/src/main/res/layout/bc_activity_input_output.xml" value="0.21770491803278688" />
+        <entry key="..\:/FB/app/src/main/res/layout/bc_activity_loop1.xml" value="0.19693301049233253" />
+        <entry key="..\:/FB/app/src/main/res/layout/bc_activity_loop2.xml" value="0.24015748031496062" />
+        <entry key="..\:/FB/app/src/main/res/layout/bc_activity_operator.xml" value="0.264" />
+        <entry key="..\:/FB/app/src/main/res/layout/bc_activity_string.xml" value="0.25416666666666665" />
+        <entry key="..\:/FB/app/src/main/res/layout/dialog_confirm_email_send.xml" value="0.25416666666666665" />
+        <entry key="..\:/FB/app/src/main/res/layout/fragment_home.xml" value="0.15520833333333334" />
+        <entry key="..\:/FB/app/src/main/res/layout/fragment_profile.xml" value="0.15520833333333334" />
+        <entry key="..\:/FB/app/src/main/res/layout/fragment_study.xml" value="0.264" />
+        <entry key="..\:/FB/app/src/main/res/layout/fragment_study_advanced.xml" value="0.25416666666666665" />
+        <entry key="..\:/FB/app/src/main/res/layout/fragment_study_basic.xml" value="0.25416666666666665" />
+        <entry key="..\:/FB/app/src/main/res/layout/fragment_study_exercise.xml" value="0.25416666666666665" />
+        <entry key="..\:/FB/app/src/main/res/layout/fragment_study_trick.xml" value="0.25416666666666665" />
+        <entry key="..\:/FB/app/src/main/res/layout/ic_password.xml" value="0.15052083333333333" />
+        <entry key="..\:/FB/app/src/main/res/layout/item_list_study.xml" value="0.25416666666666665" />
+        <entry key="..\:/FB/app/src/main/res/layout/list_white_text.xml" value="0.18802083333333333" />
+        <entry key="..\:/FB/app/src/main/res/layout/login.xml" value="0.25416666666666665" />
+        <entry key="..\:/FB/app/src/main/res/layout/login_shape_bk.xml" value="0.15052083333333333" />
+        <entry key="..\:/FB/app/src/main/res/layout/toolbar.xml" value="0.264" />
+        <entry key="..\:/FB/app/src/main/res/layout/toolbar_detail_study.xml" value="0.264" />
+        <entry key="..\:/FB/app/src/main/res/layout/toolbar_home.xml" value="0.2" />
+        <entry key="..\:/FB/app/src/main/res/menu/menu_nav_bottom.xml" value="0.264" />
+        <entry key="..\:/FB/app/src/main/res/menu/menu_toolbar_detail_study.xml" value="0.140625" />
+        <entry key="..\:/FB/app/src/main/res/menu/menu_toolbar_home.xml" value="0.264" />
+        <entry key="..\:/FB/app/src/main/res/menu/toolbar_detail_study.xml" value="0.176" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

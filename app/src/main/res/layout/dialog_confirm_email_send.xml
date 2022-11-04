@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bg_dialog_confirm_email"
+    android:layout_margin="16dp">
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_top_dialog_confirm_email"
+        android:text="Xác nhận"
+        android:textColor="@color/black"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:padding="12dp"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="Vui lòng kiểm tra email ( Thư mục spam ) để đăng ký!"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_Cancle_emailSend"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp"
+                android:textSize="14sp"
+                android:text="Hủy bỏ"
+                android:background="@drawable/bg_btn_dialog_confirm_email"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_agree_emailSend"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:text="OK"
+                android:background="@drawable/bg_btn_dialog_confirm_email"/>
+            
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_mainItem"
+        android:title=""
+        app:showAsAction="always"
+        android:icon="@drawable/ic_menu">
+        <menu>
+
+            <item
+                android:id="@+id/action_profile"
+                android:title="Hồ sơ"
+                app:showAsAction="ifRoom"
+                android:icon="@drawable/ic_age"/>
+
+            <item
+                android:id="@+id/action_contact"
+                android:title="Liên hệ"
+                app:showAsAction="ifRoom"
+                android:icon="@drawable/ic_contact_mail"/>
+
+            <item
+                android:id="@+id/action_about"
+                android:title="Thông tin ứng dụng"
+                app:showAsAction="ifRoom"
+                android:icon="@drawable/ic_infor_device"/>
+            <item
+                android:id="@+id/action_logout"
+                android:title="Đăng xuất"
+                app:showAsAction="ifRoom"
+                android:icon="@drawable/ic_logout"/>
+        </menu>
+    </item>
+
+</menu>

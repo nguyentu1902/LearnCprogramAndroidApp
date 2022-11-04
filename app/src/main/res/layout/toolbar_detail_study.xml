@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.MaterialToolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolBarDetailStudy_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/purple_700"
+    app:title="title"
+    app:titleCentered="true"
+    app:titleTextAppearance="@style/titleDetailStudy"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    app:popupTheme="@style/Theme.MaterialComponents.Light"
+    app:navigationIcon="@drawable/ic_back_white">
+
+</com.google.android.material.appbar.MaterialToolbar>

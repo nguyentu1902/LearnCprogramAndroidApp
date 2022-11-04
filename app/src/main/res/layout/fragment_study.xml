@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="20dp"
+        android:alpha="0.6"
+        android:background="@drawable/bg_basic_course1"/>
+
+    <com.example.testfirebase.FragmentStudy.CustomTabLayout
+        android:id="@+id/tab_layout_study"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabTextColor="@color/black"
+        app:tabIndicatorHeight="3dp"
+        app:tabIndicatorAnimationDuration="@android:integer/config_shortAnimTime"
+        app:tabIndicatorFullWidth="false"
+        app:tabMode="scrollable"
+        app:tabTextAppearance="@style/titleTablayoutStudy"
+        app:tabIndicatorColor="@color/black"
+        app:tabBackground="@color/white"
+        app:tabSelectedTextColor="@color/blue_0"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager_study"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tab_layout_study"/>
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg_splash">
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:layout_width="331dp"
+        android:layout_height="215dp"
+        android:layout_marginTop="120dp"
+        android:foregroundGravity="center"
+        android:gravity="center_horizontal"
+        android:src="@drawable/ccode_splash"
+        android:text="C-CODE"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:textSize="60sp" />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifDev"
+        android:layout_width="157dp"
+        android:layout_height="156dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/dev_splashscreen" />
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gifDev"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Developed by sing19022001"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:layout_alignParentBottom= "true"
+        android:gravity="center"
+        android:padding="16dp"/>
+
+
+
+</RelativeLayout>
