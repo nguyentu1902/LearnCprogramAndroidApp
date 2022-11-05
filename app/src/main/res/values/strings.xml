@@ -827,5 +827,97 @@
     </string>
 <!--    hàm con-->
 
+<!--    Mảng 1 chiều - phần 1 -->
+    <string name="BC_arr1c1_about">
+        <ul>
+            <li>Trong bài này, chúng ta sẽ bắt đầu làm quen với
+                <b>
+                    <i>khái niệm mảng 1 chiều</i>
+                </b>
+                và
+                <b>
+                    <i>cách khai báo, khởi tạo và nhập xuất mảng 1 chiều cơ bản.</i>
+                </b>
+            </li>
+        </ul>
+    </string>
+
+    <string name="BC_arr1c1_datvande">
+        <ul>
+            <li>Giả sử bạn muốn đưa 50 hành khách đi từ điểm A đến điểm B. Cách 1 bạn phải chở từng hành khách đi lần lượt,
+                tức bạn phải đi 50 vòng thì mới hết 50 khách. Cách 2 bạn có thể thuê xe khách để đưa 1 lần 50 hành khách
+                đi từ A đến B chỉ trong 1 chuyến.
+            </li>
+        </ul>
+    </string>
+
+    <string name="BC_arr1c1_giaiquyet">
+        <ul>
+            <li>Tương tự, trong lập trình bạn muốn khai báo 10, 15,... biến có cùng kiểu dữ liệu thì bạn
+                phải khai báo 10, 15,... lần. Thì mảng sinh ra để giúp chúng ta tiết kiệm thời gian cũng như công sức,
+                chỉ cần khai báo 1 mảng chứa 10, 15,... biến đó là mọi chuyện sẽ được giải quyết.
+            </li>
+        </ul>
+    </string>
+
+    <string name="BC_arr1c1_title_khainiem">
+        * <u>Khái niệm</u>:
+    </string>
+
+    <string name="BC_arr1c1_khainiem">
+        - Mảng là một tập hợp tuần tự các phần tử có cùng kiểu dữ liệu và các phần tử được lưu trữ trong một dãy các
+        ô nhớ liên tục trên bộ nhớ. Các phần tử của mảng được truy cập bằng cách sử dụng chỉ số. Mảng có kích thước N
+        sẽ có chỉ số từ 0 tới N - 1.\n
+        - Ví dụ, với N = 5, khi đó chỉ số mảng (tiếng anh là index) sẽ có giá trị từ 0 tới 4 (5-1) tương ứng với 5 phần tử. Các phần tử trong mảng được truy cập bằng cách sử dụng
+        <font fgcolor='#FFFF3B30'>
+        <i>array_name[index]</i>
+        </font>.
+    </string>
+
+    <string name="BC_arr1c1_syntax">
+        <font fgcolor='#B50F5C'>
+                <b>*
+                    <i>
+                        <u>Syntax (cú pháp)
+                        </u>
+                    </i>:
+                </b>
+        </font>
+    </string>
+
+    <string name="BC_arr1c1_syntaxdetail">
+        <i>int arr[5]</i> (mảng tên <i>arr</i> chứa 5 phần tử kiểu int).
+    </string>
+
+    <string name="BC_arr1c1_thanhphan">
+        <ul>
+            <li>Việc khai báo mảng cần 2 thành phần:\n
+            </li>
+        </ul>
+        \t- <b>Kích thước của mảng</b>: Việc này xác định số lượng phần tử có thể được lưu trữ trong mảng.\n
+        \t\t\t- <b>Kiểu dữ liệu của mảng</b>: Việc này chỉ định kiểu dữ liệu của các phần tử trong mảng; là số nguyên,
+        số thực, ký tự hay là kiểu dữ liệu nào đó.
+    </string>
+
+    <string name="BC_arr1c1_khoitao">
+         <font fgcolor='#B50F5C'>
+                <b>*
+                    <i>
+                        <u>Khởi tạo giá trị cho phần tử trong mảng
+                        </u>
+                    </i>:
+                </b>
+        </font>
+    </string>
+
+    <string name="BC_arr1c1_khoitao_detail">
+        \t\t\t- Cách 1: khởi tạo ngay tại thời điểm khai báo mảng. Ví dụ: int arr[5] = {4, 12, 7, 15, 9};\n
+        \t\t\t- Cách 2: khởi tạo sau khi khai báo mảng.
+        \n\t\t\t\tVí dụ: int arr[5];\n\t\t\t\t\t\t\t\t\t\t\t\tarr[0] = 4;\n\t\t\t\t\t\t\t\t\t\t\t\tarr[1] = 12;
+        \n\t\t\t\t\t\t\t\t\t\t\t\tarr[2] = 19;\n\t\t\t\t\t\t\t\t\t\t\t\tarr[3] = 2;\n\t\t\t\t\t\t\t\t\t\t\t\tarr[4] = 78;
+    </string>
+
+<!--    Mảng 1 chiều - phần 1 -->
+
 
 </resources>
