@@ -14,8 +14,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/toolBar_DetailStudy"
-        tools:ignore="UnknownId"
-        android:padding="5dp">
+        android:padding="5dp"
+        tools:ignore="UnknownId">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -24,88 +24,191 @@
             android:padding="10dp">
 
             <TextView
-                android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:text="@string/BC_arr1c1_about"
-                android:textSize="17sp"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black"
+                android:textSize="17sp" />
 
             <TextView
-                android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:text="@string/BC_arr1c1_datvande"
-                android:textSize="15sp"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black"
+                android:textSize="15sp" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/BC_arr1c1_giaiquyet"
-                android:textSize="15sp"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black"
+                android:textSize="15sp" />
 
             <TextView
-                android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
                 android:text="@string/BC_arr1c1_title_khainiem"
-                android:textStyle="bold|italic"
+                android:textColor="@color/highlight"
                 android:textSize="17sp"
-                android:textColor="@color/highlight"/>
+                android:textStyle="bold|italic" />
 
             <TextView
-                android:layout_marginTop="5dp"
-                android:layout_marginLeft="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
                 android:text="@string/BC_arr1c1_khainiem"
-                android:textSize="15sp"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/BC_arr1c1_syntax"
+                android:textColor="@color/highlight"
+                android:textSize="17sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/BC_arr1c1_syntaxdetail"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/BC_arr1c1_thanhphan"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/BC_arr1c1_khoitao"
+                android:textColor="@color/highlight"
+                android:textSize="17sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/BC_arr1c1_khoitao_detail"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/BC_arr1c1_thaotac"
+                android:textColor="@color/highlight"
+                android:textSize="17sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/bc_arr1c1_exp1"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/bc_arr1c1_exp1_code" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="@string/exampleResult"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="160dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/bc_arr1c1_exp1_result" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/bc_arr1c1_exp1_explain"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/bc_arr1c1_exp2"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="760dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/bc_arr1c1_exp2_code" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="@string/exampleResult"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/bc_arr1c1_exp2_result" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/bc_arr1c1_exp2_explain"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
 
             <TextView
                 android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/BC_arr1c1_syntax"
+                android:text="@string/conclusion"
                 android:textStyle="bold|italic"
                 android:textSize="17sp"
                 android:textColor="@color/highlight"/>
 
             <TextView
-                android:layout_marginTop="5dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginLeft="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/BC_arr1c1_syntaxdetail"
+                android:text="@string/BC_arr1c1_conclusionDetail"
                 android:textSize="15sp"
-                android:textColor="@color/black"/>
-
-            <TextView
-                android:layout_marginTop="20dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/BC_arr1c1_thanhphan"
-                android:textSize="15sp"
-                android:textColor="@color/black"/>
-
-            <TextView
-                android:layout_marginTop="20dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/BC_arr1c1_khoitao"
-                android:textStyle="bold|italic"
-                android:textSize="17sp"
-                android:textColor="@color/highlight"/>
-
-            <TextView
-                android:layout_marginTop="5dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/BC_arr1c1_khoitao_detail"
-                android:textSize="15sp"
-                android:textColor="@color/black"/>
+                android:textColor="@color/black"
+                android:background="#CFD8D8"/>
 
 
         </LinearLayout>
