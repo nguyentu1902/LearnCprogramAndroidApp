@@ -15,6 +15,7 @@
         <entry key="..\:/FB/app/src/main/res/drawable-v24/navigation_study.xml" value="0.17395833333333333" />
         <entry key="..\:/FB/app/src/main/res/drawable/bg_basic_course1.xml" value="0.15989583333333332" />
         <entry key="..\:/FB/app/src/main/res/drawable/bg_dialog_confirm_email.xml" value="0.2703125" />
+        <entry key="..\:/FB/app/src/main/res/drawable/circle_img_user_profile.xml" value="0.14635416666666667" />
         <entry key="..\:/FB/app/src/main/res/drawable/ic_age.xml" value="0.15416666666666667" />
         <entry key="..\:/FB/app/src/main/res/drawable/ic_back.xml" value="0.16354166666666667" />
         <entry key="..\:/FB/app/src/main/res/drawable/ic_contact_mail.xml" value="0.15416666666666667" />
@@ -33,11 +34,12 @@
         <entry key="..\:/FB/app/src/main/res/layout/activity_home.xml" value="0.25416666666666665" />
         <entry key="..\:/FB/app/src/main/res/layout/activity_input_output.xml" value="0.14375" />
         <entry key="..\:/FB/app/src/main/res/layout/activity_learn.xml" value="0.2" />
-        <entry key="..\:/FB/app/src/main/res/layout/activity_login.xml" value="0.264" />
+        <entry key="..\:/FB/app/src/main/res/layout/activity_login.xml" value="0.2" />
         <entry key="..\:/FB/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/FB/app/src/main/res/layout/activity_register.xml" value="0.2" />
         <entry key="..\:/FB/app/src/main/res/layout/activity_splash_screen.xml" value="0.264" />
-        <entry key="..\:/FB/app/src/main/res/layout/bc_activity_array1.xml" value="0.13873798579189303" />
-        <entry key="..\:/FB/app/src/main/res/layout/bc_activity_array2.xml" value="0.1692150866462793" />
+        <entry key="..\:/FB/app/src/main/res/layout/bc_activity_array1.xml" value="0.2" />
+        <entry key="..\:/FB/app/src/main/res/layout/bc_activity_array2.xml" value="0.2" />
         <entry key="..\:/FB/app/src/main/res/layout/bc_activity_condition.xml" value="0.1" />
         <entry key="..\:/FB/app/src/main/res/layout/bc_activity_data_type.xml" value="0.22022955523672882" />
         <entry key="..\:/FB/app/src/main/res/layout/bc_activity_function.xml" value="0.19717171717171716" />
@@ -45,10 +47,12 @@
         <entry key="..\:/FB/app/src/main/res/layout/bc_activity_loop1.xml" value="0.17965367965367965" />
         <entry key="..\:/FB/app/src/main/res/layout/bc_activity_loop2.xml" value="0.24015748031496062" />
         <entry key="..\:/FB/app/src/main/res/layout/bc_activity_operator.xml" value="0.264" />
-        <entry key="..\:/FB/app/src/main/res/layout/bc_activity_string.xml" value="0.25416666666666665" />
+        <entry key="..\:/FB/app/src/main/res/layout/bc_activity_string.xml" value="0.1692150866462793" />
+        <entry key="..\:/FB/app/src/main/res/layout/circle_img_profile_user.xml" value="0.13020833333333334" />
         <entry key="..\:/FB/app/src/main/res/layout/dialog_confirm_email_send.xml" value="0.25416666666666665" />
+        <entry key="..\:/FB/app/src/main/res/layout/dialog_confirm_newpassword.xml" value="0.4" />
         <entry key="..\:/FB/app/src/main/res/layout/fragment_home.xml" value="0.15520833333333334" />
-        <entry key="..\:/FB/app/src/main/res/layout/fragment_profile.xml" value="0.15520833333333334" />
+        <entry key="..\:/FB/app/src/main/res/layout/fragment_profile.xml" value="0.264" />
         <entry key="..\:/FB/app/src/main/res/layout/fragment_study.xml" value="0.264" />
         <entry key="..\:/FB/app/src/main/res/layout/fragment_study_advanced.xml" value="0.25416666666666665" />
         <entry key="..\:/FB/app/src/main/res/layout/fragment_study_basic.xml" value="0.25416666666666665" />

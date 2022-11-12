@@ -130,8 +130,6 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:passwordToggleTint="@color/black"
-            app:passwordToggleEnabled="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="10dp"
@@ -139,7 +137,9 @@
             android:textColorHint="@color/black"
             app:boxStrokeColor="@color/black"
             app:boxStrokeWidth="2dp"
-            app:hintTextColor="@color/black">
+            app:hintTextColor="@color/black"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/black">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edtPass_dk"

@@ -108,8 +108,8 @@
         android:layout_below="@+id/bg_username_password"
         android:layout_marginStart="10dp"
         android:text="Quên mật khẩu?"
-        android:textColor="@color/white"
         android:textAllCaps="false"
+        android:textColor="@color/white"
         android:textSize="12dp"
         android:textStyle="italic" />
 
