@@ -18,9 +18,9 @@ public class InputOutput extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.bc_activity_input_output);
 
-        webView = findViewById(R.id.webView);
-        //webView.getSettings().setJavaScriptEnabled(true);
-        webView.loadUrl("http://192.168.1.122:8089/Topics1");
+        webView = findViewById(R.id.webView_bc_io);
+        //ip hutech: 10.14.109.4
+        webView.loadUrl("http://192.168.1.122:8089/BasicCours/Details/1");
 
         mappingId();
         setSupportActionBar(toolbarDetailStudy);

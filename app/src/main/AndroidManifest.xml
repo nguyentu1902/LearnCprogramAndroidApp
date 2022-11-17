@@ -2,17 +2,48 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.testfirebase">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="C - CODE"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TestFirebase">
+        <activity
+            android:name=".DetailAdvanceCourse.Queue"
+            android:exported="false" />
+        <activity
+            android:name=".DetailAdvanceCourse.Stack"
+            android:exported="false" />
+        <activity
+            android:name=".DetailAdvanceCourse.FileIO"
+            android:exported="false" />
+        <activity
+            android:name=".DetailAdvanceCourse.LinkedList"
+            android:exported="false" />
+        <activity
+            android:name=".DetailAdvanceCourse.Structures"
+            android:exported="false" />
+        <activity
+            android:name=".DetailAdvanceCourse.Sort"
+            android:exported="false" />
+        <activity
+            android:name=".DetailAdvanceCourse.Search"
+            android:exported="false" />
+        <activity
+            android:name=".DetailAdvanceCourse.Array2way"
+            android:exported="false" />
+        <activity
+            android:name=".DetailAdvanceCourse.Pointers"
+            android:exported="false" />
+        <activity
+            android:name=".DetailAdvanceCourse.Recursion"
+            android:exported="false" />
         <activity
             android:name=".DetailBasicCourse.String"
             android:exported="false" />

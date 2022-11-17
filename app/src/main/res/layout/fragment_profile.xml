@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:layout_marginStart="90dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="90dp"
         android:src="@drawable/default_img_user_profile"
         app:civ_border_color="@color/black"
@@ -23,80 +23,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/imgUser_Profile"
-        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
         android:gravity="center_horizontal"
         android:text=" "
         android:textColor="@color/black"
         android:textSize="17sp"
         android:textStyle="bold|italic" />
-
-<!--    <TextView-->
-<!--        android:id="@+id/txtEmail_Profile"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_below="@+id/imgUser_Profile"-->
-<!--        android:layout_marginStart="55dp"-->
-<!--        android:layout_marginTop="50dp"-->
-<!--        android:text="Email:"-->
-<!--        android:textColor="@color/black"-->
-<!--        android:textSize="15sp"-->
-<!--        android:textStyle="italic|bold" />-->
-
-<!--    <EditText-->
-<!--        android:id="@+id/edtEmail_Profile"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_below="@id/txtEmail_Profile"-->
-<!--        android:layout_marginStart="55dp"-->
-<!--        android:layout_marginEnd="25dp"-->
-<!--        android:inputType="textEmailAddress"-->
-<!--        android:textColor="@color/black"-->
-<!--        android:textSize="13sp" />-->
-
-<!--    <TextView-->
-<!--        android:id="@+id/txtName_Profile"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_below="@+id/edtEmail_Profile"-->
-<!--        android:layout_marginStart="55dp"-->
-<!--        android:layout_marginTop="10dp"-->
-<!--        android:text="Họ tên:"-->
-<!--        android:textColor="@color/black"-->
-<!--        android:textSize="15sp"-->
-<!--        android:textStyle="italic|bold" />-->
-
-<!--    <EditText-->
-<!--        android:id="@+id/edtName_Profile"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_below="@id/txtName_Profile"-->
-<!--        android:layout_marginStart="55dp"-->
-<!--        android:layout_marginEnd="25dp"-->
-<!--        android:textColor="@color/black"-->
-<!--        android:textSize="13sp" />-->
-
-<!--    <TextView-->
-<!--        android:id="@+id/txtAge_Profile"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_below="@+id/edtName_Profile"-->
-<!--        android:layout_marginStart="55dp"-->
-<!--        android:layout_marginTop="10dp"-->
-<!--        android:inputType="number"-->
-<!--        android:text="Tuổi:"-->
-<!--        android:textColor="@color/black"-->
-<!--        android:textSize="15sp"-->
-<!--        android:textStyle="italic|bold" />-->
-
-<!--    <EditText-->
-<!--        android:id="@+id/edtAge_Profile"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_below="@id/txtAge_Profile"-->
-<!--        android:layout_marginStart="55dp"-->
-<!--        android:layout_marginEnd="25dp"-->
-<!--        android:textColor="@color/black"-->
-<!--        android:textSize="13sp" />-->
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/email_dk"
@@ -104,7 +36,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
         android:hint="Email"
         android:textColorHint="@color/black"
@@ -188,10 +119,22 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
+    <Button
+        android:id="@+id/btnDeleteUser_Profile"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="Xóa tài khoản"
+        android:textAllCaps="false"
+        android:layout_marginEnd="5dp"
+        android:textColor="@color/black"
+        android:textSize="10dp"
+        android:textStyle="italic|bold" />
+
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="10dp">
+        android:layout_height="match_parent">
 
         <ScrollView
             android:layout_width="match_parent"
@@ -206,7 +149,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
-                    android:layout_marginTop="20dp"
                     android:layout_marginEnd="10dp"
                     android:orientation="horizontal">
 
@@ -219,6 +161,7 @@
                         android:layout_weight="1"
                         android:backgroundTint="@color/sky"
                         android:text="Sửa thông tin"
+                        android:textAllCaps="false"
                         android:textColor="@color/black"
                         android:textSize="10sp"
                         android:textStyle="bold" />
@@ -235,6 +178,7 @@
                         android:maxWidth="2dp"
                         android:maxHeight="2dp"
                         android:text="Lưu thông tin"
+                        android:textAllCaps="false"
                         android:textColor="@color/black"
                         android:textSize="10sp"
                         android:textStyle="bold" />
@@ -260,6 +204,7 @@
                         android:layout_weight="1"
                         android:backgroundTint="@color/sky"
                         android:text="Chọn ảnh"
+                        android:textAllCaps="false"
                         android:textColor="@color/black"
                         android:textSize="10sp"
                         android:textStyle="bold" />
@@ -275,6 +220,7 @@
                         android:maxWidth="2dp"
                         android:maxHeight="2dp"
                         android:text="Lưu ảnh"
+                        android:textAllCaps="false"
                         android:textColor="@color/black"
                         android:textSize="10sp"
                         android:textStyle="bold" />
@@ -299,12 +245,13 @@
                         android:layout_weight="1"
                         android:backgroundTint="@color/sky"
                         android:text="Reset mật khẩu"
+                        android:textAllCaps="false"
                         android:textColor="@color/black"
                         android:textSize="10sp"
                         android:textStyle="bold" />
 
                     <com.google.android.material.button.MaterialButton
-                        android:id="@+id/btnDeleteUser_Profile"
+                        android:id="@+id/btnResetEmail_Profile"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="25dp"
@@ -313,7 +260,8 @@
                         android:backgroundTint="@color/sky"
                         android:maxWidth="2dp"
                         android:maxHeight="2dp"
-                        android:text="Xóa tài khoản"
+                        android:text="Reset Email"
+                        android:textAllCaps="false"
                         android:textColor="@color/black"
                         android:textSize="10sp"
                         android:textStyle="bold" />

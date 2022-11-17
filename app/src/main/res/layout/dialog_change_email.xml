@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/bg_dialog_confirm_email"
+    android:layout_margin="16dp">
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_top_dialog_confirm_email"
+        android:text="Vui lòng nhập email mới"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:padding="12dp"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email mới...">
+            <EditText
+                android:id="@+id/edtNewEmail_Profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:background="@color/white"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_Cancel_newEmail_Profile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp"
+                android:textSize="14sp"
+                android:text="Hủy bỏ"
+                android:textColor="@color/black"
+                android:textAllCaps="false"
+                android:background="@drawable/bg_btn_dialog_confirm_email"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_confirm_newEmail_Profile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:text="Xác nhận"
+                android:textColor="@color/black"
+                android:textAllCaps="false"
+                android:background="@drawable/bg_btn_dialog_confirm_email"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -19,25 +19,38 @@
         <entry key="..\:/FB/app/src/main/res/drawable/ic_age.xml" value="0.15416666666666667" />
         <entry key="..\:/FB/app/src/main/res/drawable/ic_back.xml" value="0.16354166666666667" />
         <entry key="..\:/FB/app/src/main/res/drawable/ic_contact_mail.xml" value="0.15416666666666667" />
+        <entry key="..\:/FB/app/src/main/res/drawable/ic_copy_contact.xml" value="0.16770833333333332" />
         <entry key="..\:/FB/app/src/main/res/drawable/ic_infor_device.xml" value="0.15416666666666667" />
         <entry key="..\:/FB/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1796875" />
         <entry key="..\:/FB/app/src/main/res/drawable/ic_login_bk.xml" value="0.26296296296296295" />
         <entry key="..\:/FB/app/src/main/res/drawable/ic_logout.xml" value="0.15416666666666667" />
         <entry key="..\:/FB/app/src/main/res/drawable/ic_menu.xml" value="0.17395833333333333" />
         <entry key="..\:/FB/app/src/main/res/drawable/ic_password.xml" value="0.16666666666666666" />
+        <entry key="..\:/FB/app/src/main/res/drawable/ic_phone_call_contact.xml" value="0.16770833333333332" />
         <entry key="..\:/FB/app/src/main/res/drawable/ic_username.xml" value="0.16666666666666666" />
         <entry key="..\:/FB/app/src/main/res/drawable/img_code.xml" value="0.17916666666666667" />
         <entry key="..\:/FB/app/src/main/res/drawable/login_shape_bk.xml" value="0.16666666666666666" />
         <entry key="..\:/FB/app/src/main/res/drawable/toolbar_detail_study.xml" value="0.15677083333333333" />
+        <entry key="..\:/FB/app/src/main/res/layout/activity_array2way.xml" value="0.14479166666666668" />
         <entry key="..\:/FB/app/src/main/res/layout/activity_dangky.xml" value="0.264" />
         <entry key="..\:/FB/app/src/main/res/layout/activity_data_type.xml" value="0.25416666666666665" />
-        <entry key="..\:/FB/app/src/main/res/layout/activity_home.xml" value="0.25416666666666665" />
+        <entry key="..\:/FB/app/src/main/res/layout/activity_file_io.xml" value="0.14479166666666668" />
+        <entry key="..\:/FB/app/src/main/res/layout/activity_home.xml" value="0.176" />
         <entry key="..\:/FB/app/src/main/res/layout/activity_input_output.xml" value="0.14375" />
         <entry key="..\:/FB/app/src/main/res/layout/activity_learn.xml" value="0.2" />
-        <entry key="..\:/FB/app/src/main/res/layout/activity_login.xml" value="0.2" />
+        <entry key="..\:/FB/app/src/main/res/layout/activity_linked_list.xml" value="0.14479166666666668" />
+        <entry key="..\:/FB/app/src/main/res/layout/activity_login.xml" value="0.264" />
         <entry key="..\:/FB/app/src/main/res/layout/activity_main.xml" value="0.264" />
-        <entry key="..\:/FB/app/src/main/res/layout/activity_register.xml" value="0.2" />
+        <entry key="..\:/FB/app/src/main/res/layout/activity_pointers.xml" value="0.14479166666666668" />
+        <entry key="..\:/FB/app/src/main/res/layout/activity_queue.xml" value="0.14479166666666668" />
+        <entry key="..\:/FB/app/src/main/res/layout/activity_recursion.xml" value="0.14479166666666668" />
+        <entry key="..\:/FB/app/src/main/res/layout/activity_recursion2.xml" value="0.11614583333333334" />
+        <entry key="..\:/FB/app/src/main/res/layout/activity_register.xml" value="0.264" />
+        <entry key="..\:/FB/app/src/main/res/layout/activity_search.xml" value="0.14479166666666668" />
+        <entry key="..\:/FB/app/src/main/res/layout/activity_sort.xml" value="0.14479166666666668" />
         <entry key="..\:/FB/app/src/main/res/layout/activity_splash_screen.xml" value="0.264" />
+        <entry key="..\:/FB/app/src/main/res/layout/activity_stack.xml" value="0.14479166666666668" />
+        <entry key="..\:/FB/app/src/main/res/layout/activity_structures.xml" value="0.14479166666666668" />
         <entry key="..\:/FB/app/src/main/res/layout/bc_activity_array1.xml" value="0.2" />
         <entry key="..\:/FB/app/src/main/res/layout/bc_activity_array2.xml" value="0.2" />
         <entry key="..\:/FB/app/src/main/res/layout/bc_activity_condition.xml" value="0.1" />
@@ -46,11 +59,13 @@
         <entry key="..\:/FB/app/src/main/res/layout/bc_activity_input_output.xml" value="0.21770491803278688" />
         <entry key="..\:/FB/app/src/main/res/layout/bc_activity_loop1.xml" value="0.17965367965367965" />
         <entry key="..\:/FB/app/src/main/res/layout/bc_activity_loop2.xml" value="0.24015748031496062" />
-        <entry key="..\:/FB/app/src/main/res/layout/bc_activity_operator.xml" value="0.264" />
+        <entry key="..\:/FB/app/src/main/res/layout/bc_activity_operator.xml" value="0.1700348432055749" />
         <entry key="..\:/FB/app/src/main/res/layout/bc_activity_string.xml" value="0.1692150866462793" />
+        <entry key="..\:/FB/app/src/main/res/layout/bottom_sheet_contact.xml" value="0.264" />
         <entry key="..\:/FB/app/src/main/res/layout/circle_img_profile_user.xml" value="0.13020833333333334" />
+        <entry key="..\:/FB/app/src/main/res/layout/dialog_change_email.xml" value="0.264" />
         <entry key="..\:/FB/app/src/main/res/layout/dialog_confirm_email_send.xml" value="0.25416666666666665" />
-        <entry key="..\:/FB/app/src/main/res/layout/dialog_confirm_newpassword.xml" value="0.4" />
+        <entry key="..\:/FB/app/src/main/res/layout/dialog_confirm_newpassword.xml" value="0.264" />
         <entry key="..\:/FB/app/src/main/res/layout/fragment_home.xml" value="0.15520833333333334" />
         <entry key="..\:/FB/app/src/main/res/layout/fragment_profile.xml" value="0.264" />
         <entry key="..\:/FB/app/src/main/res/layout/fragment_study.xml" value="0.264" />
@@ -70,6 +85,8 @@
         <entry key="..\:/FB/app/src/main/res/menu/menu_toolbar_detail_study.xml" value="0.140625" />
         <entry key="..\:/FB/app/src/main/res/menu/menu_toolbar_home.xml" value="0.264" />
         <entry key="..\:/FB/app/src/main/res/menu/toolbar_detail_study.xml" value="0.176" />
+        <entry key="..\:/FB/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.25364583333333335" />
+        <entry key="..\:/FB/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.25364583333333335" />
       </map>
     </option>
   </component>

@@ -1,31 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activityHome"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Home"
-    android:background="@color/white">
+    android:background="@color/white"
+    tools:context=".Home">
 
-    <include
-        android:id="@+id/toolbarHome"
-        layout="@layout/toolbar_home" />
-    
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/view_pager_Home"
-        android:layout_below="@+id/toolbarHome"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@+id/nav_bottom"/>
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/nav_bottom"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        app:menu="@menu/menu_nav_bottom"
-        app:itemBackground="@color/sky"
-        app:labelVisibilityMode="unlabeled"
-        app:itemIconTint="@color/custom_icon_nav_bottom"/>
+        android:background="@color/white">
 
-</RelativeLayout>
+        <include
+            android:id="@+id/toolbarHome"
+            layout="@layout/toolbar_home" />
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/view_pager_Home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/nav_bottom"
+            android:layout_below="@+id/toolbarHome" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/nav_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            app:itemBackground="@color/sky"
+            app:itemIconTint="@color/custom_icon_nav_bottom"
+            app:labelVisibilityMode="unlabeled"
+            app:menu="@menu/menu_nav_bottom" />
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/bottomSheetContact_Home"
+        layout="@layout/bottom_sheet_contact" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -10,94 +10,10 @@
         android:id="@+id/toolBar_DetailStudy"
         layout="@layout/toolbar_detail_study"/>
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+    <WebView
+        android:id="@+id/webView_bc_arr1_2"
         android:layout_below="@+id/toolBar_DetailStudy"
-        android:padding="5dp"
-        tools:ignore="UnknownId">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:padding="10dp">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:text="@string/BC_arr1c2_about"
-                android:textColor="@color/black"
-                android:textSize="17sp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:text="@string/bc_arr1c2_exp1"
-                android:textColor="@color/black"
-                android:textSize="15sp" />
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="850dp"
-                android:scaleType="fitXY"
-                android:src="@drawable/bc_arr1c2_exp1_code" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="25dp"
-                android:text="@string/exampleResult"
-                android:textColor="@color/black"
-                android:textSize="15sp" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="200dp"
-                android:scaleType="fitXY"
-                android:src="@drawable/bc_arr1c2_exp1_result" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="5dp"
-                android:text="@string/bc_arr1c2_exp1_explain"
-                android:textColor="@color/black"
-                android:textSize="15sp" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:text="@string/bc_arr1c2_exp2"
-                android:textColor="@color/black"
-                android:textSize="15sp" />
-
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="700dp"
-                android:scaleType="fitXY"
-                android:src="@drawable/bc_arr1c2_exp2_code" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="25dp"
-                android:text="@string/exampleResult"
-                android:textColor="@color/black"
-                android:textSize="15sp" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="180dp"
-                android:scaleType="fitXY"
-                android:src="@drawable/bc_arr1c2_exp2_result" />
-
-
-        </LinearLayout>
-    </ScrollView>
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 
 </RelativeLayout>

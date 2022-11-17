@@ -10,6 +10,7 @@ import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Patterns;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -52,8 +53,9 @@ public class ProfileFragment extends Fragment {
     private static final int SELECT_PICTURE = 1;
     private String selectedImagePath;
     private View viewProfile;
-    private EditText edtMail, edtName, edtAge, edtNewpw;
-    private Button btnUpdateInfor, btnSaveInfor, btnChooseImg, btnSaveImg, btnResetPass, btnDeleteAccount, btnExitnewpw, btnConfirmnewpw;
+    private EditText edtMail, edtName, edtAge, edtNewpw, edtNewEmail;
+    private Button btnUpdateInfor, btnSaveInfor, btnChooseImg, btnSaveImg, btnResetPass,
+            btnDeleteAccount, btnExitnewpw, btnConfirmnewpw, btnExitnewEmail, btnConfirmNewEmail, btnResetEmail;
     private ImageView imgProfile;
     private TextView txtWelcome;
 
@@ -174,6 +176,14 @@ public class ProfileFragment extends Fragment {
             }
         });
 
+        //reset email
+        btnResetEmail.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openDialogConfirmNewEmail(Gravity.CENTER);
+            }
+        });
+
 
         return viewProfile;
     }
@@ -183,12 +193,14 @@ public class ProfileFragment extends Fragment {
         edtName = viewProfile.findViewById(R.id.edtName_Profile);
         edtAge = viewProfile.findViewById(R.id.edtAge_Profile);
         edtNewpw = viewProfile.findViewById(R.id.edtNewpassWord_Profile);
+        edtNewEmail = viewProfile.findViewById(R.id.edtNewEmail_Profile);
         btnUpdateInfor = viewProfile.findViewById(R.id.btnUpdate_infor_profile);
         btnSaveInfor = viewProfile.findViewById(R.id.btnSave_infor_Profile);
         btnChooseImg = viewProfile.findViewById(R.id.btnChoose_Img_profile);
         btnSaveImg = viewProfile.findViewById(R.id.btnSave_img_Profile);
         btnDeleteAccount = viewProfile.findViewById(R.id.btnDeleteUser_Profile);
         btnResetPass = viewProfile.findViewById(R.id.btnUpdatePass_profile);
+        btnResetEmail = viewProfile.findViewById(R.id.btnResetEmail_Profile);
         imgProfile = viewProfile.findViewById(R.id.imgUser_Profile);
         txtWelcome = viewProfile.findViewById(R.id.txtWelcome_Profile);
     }
@@ -402,7 +414,57 @@ public class ProfileFragment extends Fragment {
         dialog.show();
     }
 
-    //xoa tai khoan
+    public void openDialogConfirmNewEmail(int gravity)
+    {
+        final Dialog dialog = new Dialog(getActivity());
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setContentView(R.layout.dialog_change_email);
+
+        Window window = dialog.getWindow();
+        if (window == null)
+        {
+            return;
+        }
+        window.setLayout(WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.WRAP_CONTENT);
+        window.setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+
+        WindowManager.LayoutParams windowAttributes = window.getAttributes();
+        windowAttributes.gravity = gravity;
+        window.setAttributes(windowAttributes);
+
+        if(Gravity.CENTER == gravity)
+        {
+            dialog.setCancelable(true);
+        }
+
+        edtNewEmail = dialog.findViewById(R.id.edtNewEmail_Profile);
+        btnExitnewEmail = dialog.findViewById(R.id.btn_Cancel_newEmail_Profile);
+        btnConfirmNewEmail = dialog.findViewById(R.id.btn_confirm_newEmail_Profile);
+
+        btnExitnewEmail.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialog.dismiss();
+            }
+        });
+
+        btnConfirmNewEmail.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String newpEmail = edtNewEmail.getText().toString().trim();
+                if(!Patterns.EMAIL_ADDRESS.matcher(newpEmail).matches() || TextUtils.isEmpty(edtNewEmail.getText().toString().trim()))
+                {
+                    edtNewEmail.setError("Yêu cầu nhập chính xác email của bạn!");
+                    edtNewEmail.requestFocus();
+                }
+                resetEmail(newpEmail);
+                dialog.dismiss();
+            }
+        });
+        dialog.show();
+    }
+
+    //đổi mật khẩu
     public void resetPassword(String newpw) {
         AuthCredential credential = EmailAuthProvider.getCredential(user.getEmail(), "0");
         user.reauthenticate(credential).addOnCompleteListener(new OnCompleteListener<Void>() {
@@ -417,6 +479,28 @@ public class ProfileFragment extends Fragment {
                     @Override
                     public void onFailure(@NonNull Exception e) {
                         Toast.makeText(getActivity(), "Cập nhật mật khẩu thất bại!", Toast.LENGTH_SHORT).show();
+                    }
+                });
+            }
+        });
+    }
+
+    //đổi email
+    public void resetEmail(String email) {
+        AuthCredential credential = EmailAuthProvider.getCredential(user.getEmail(), "0");
+        user.reauthenticate(credential).addOnCompleteListener(new OnCompleteListener<Void>() {
+            @Override
+            public void onComplete(@NonNull Task<Void> task) {
+                user.updateEmail(email).addOnSuccessListener(new OnSuccessListener<Void>() {
+                    @Override
+                    public void onSuccess(Void unused) {
+                        reference.child(userID).child("email").setValue(email);
+                        Toast.makeText(getActivity(), "Cập nhật email thành công!", Toast.LENGTH_SHORT).show();
+                    }
+                }).addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        Toast.makeText(getActivity(), "Cập nhật email thất bại!", Toast.LENGTH_SHORT).show();
                     }
                 });
             }
