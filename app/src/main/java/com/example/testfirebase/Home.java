@@ -2,6 +2,7 @@ package com.example.testfirebase;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
+import android.content.ActivityNotFoundException;
 import android.content.ClipData;
 import android.content.ClipboardManager;
 import android.content.Context;
@@ -10,6 +11,7 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -107,6 +109,7 @@ public class Home extends AppCompatActivity {
         });
     }
 
+    //gọi
     private void phoneCall()
     {
         String number = txtPhoneContact.getText().toString().trim();
@@ -244,7 +247,8 @@ public class Home extends AppCompatActivity {
                 bottomSheetContact();
                 break;
             case R.id.action_about:
-                Toast.makeText(Home.this, "Thông tin ứng dụng", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(Home.this, "Thông tin ứng dụng", Toast.LENGTH_SHORT).show();
+                showInfoApp();
                 break;
             case R.id.action_logout:
                 showMessageToLogout();
@@ -253,9 +257,26 @@ public class Home extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
+    //mở bottom sheet
     private void bottomSheetContact()
     {
         if(bottomSheetBehavior.getState() != BottomSheetBehavior.STATE_EXPANDED)
             bottomSheetBehavior.setState(BottomSheetBehavior.STATE_EXPANDED);
+    }
+
+    //hiển thị thông tin ứng dụng
+    private void showInfoApp()
+    {
+        try
+        {
+            Intent intent = new Intent(Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
+            intent.setData(Uri.parse("package:" + getApplicationContext().getPackageName()));
+            startActivity(intent);
+        }
+        catch (ActivityNotFoundException e)
+        {
+            Intent intent = new Intent(android.provider.Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
+            startActivity(intent);
+        }
     }
 }

@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@color/sky"
-    app:title="C-code"
+    app:title="C-CODE"
     app:titleTextColor="@color/black"
     app:titleMarginStart="30dp"
     android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
