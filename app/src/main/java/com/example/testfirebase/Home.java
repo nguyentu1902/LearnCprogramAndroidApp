@@ -243,11 +243,9 @@ public class Home extends AppCompatActivity {
                 viewPager_Home.setCurrentItem(2);
                 break;
             case R.id.action_contact:
-                //Toast.makeText(Home.this, "Liên hệ", Toast.LENGTH_SHORT).show();
                 bottomSheetContact();
                 break;
             case R.id.action_about:
-                //Toast.makeText(Home.this, "Thông tin ứng dụng", Toast.LENGTH_SHORT).show();
                 showInfoApp();
                 break;
             case R.id.action_logout:

@@ -44,6 +44,8 @@
             android:layout_marginLeft="10dp">
 
             <TextView
+                android:textColorLink="@color/sky"
+                android:autoLink="email"
                 android:id="@+id/txtEmail_contact"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

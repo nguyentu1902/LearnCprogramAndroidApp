@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailRemind.SoftSkill">
+
+    <include
+        android:id="@+id/toolBar_DetailRemind"
+        layout="@layout/toolbar_detail_study"/>
+
+    <WebView
+        android:id="@+id/webView_rm_softskill"
+        android:layout_below="@+id/toolBar_DetailRemind"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

@@ -6,6 +6,7 @@ import android.os.Looper;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -31,6 +32,7 @@ public class HomeFragment extends Fragment {
     private ImageSliderHomeAdapter imageSliderHomeAdapter;
     private List<ImageSliderHome> listImg;
     private Timer timeToSlide;
+    private WebView webView;
 
     @Nullable
     @Override
@@ -38,6 +40,8 @@ public class HomeFragment extends Fragment {
         viewHome = inflater.inflate(R.layout.fragment_home, container, false);
 
         mapping();
+        webView.loadUrl("http://192.168.1.122:8089/Homes/Details/2");
+
         listImg = getListImg();
         imageSliderHomeAdapter = new ImageSliderHomeAdapter(getActivity(), listImg);
         viewPager.setAdapter(imageSliderHomeAdapter);
@@ -54,6 +58,7 @@ public class HomeFragment extends Fragment {
     {
         viewPager = viewHome.findViewById(R.id.viewPager_imgHome);
         circleIndicator = viewHome.findViewById(R.id.circlerIndicator_imgHome);
+        webView = viewHome.findViewById(R.id.webView_Home);
     }
 
     private List<ImageSliderHome> getListImg()

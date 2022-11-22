@@ -19,6 +19,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.testfirebase.Object.UserAccount;
+import com.github.ybq.android.spinkit.style.ThreeBounce;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.textfield.TextInputEditText;
@@ -30,7 +31,7 @@ public class Register extends AppCompatActivity {
     private Button btnBacktoLogin, btnDangKy, btnCancleEmailsend, btnAgreeEmailsend;
     private TextInputEditText edtEmail, edtPassWord, edtName, edtAge;
     private FirebaseAuth mAuth;
-    private ProgressBar progressBar;
+    private ProgressBar progressBar_dk;
     private CheckBox cbConfirm;
 
     @Override
@@ -41,7 +42,8 @@ public class Register extends AppCompatActivity {
         setContentView(R.layout.activity_register);
 
         mappingId();
-        progressBar.setVisibility(View.INVISIBLE);
+        progressBar_dk.setVisibility(View.INVISIBLE);
+        progressBar_dk.setIndeterminateDrawable(new ThreeBounce());
 
         //tro ve man hinh dang nhap
         btnBacktoLogin.setOnClickListener(new View.OnClickListener() {
@@ -71,7 +73,7 @@ public class Register extends AppCompatActivity {
         edtPassWord = findViewById(R.id.edtPass_dk);
         edtName = findViewById(R.id.edtName_dk);
         edtAge = findViewById(R.id.edtAge_dk);
-        progressBar = findViewById(R.id.progressBar_dk);
+        progressBar_dk = findViewById(R.id.progressBar_dk);
         cbConfirm = findViewById(R.id.cbConfirm);
         mAuth = FirebaseAuth.getInstance();
     }
@@ -182,7 +184,7 @@ public class Register extends AppCompatActivity {
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if(task.isSuccessful())
                             {
-                                progressBar.setVisibility(View.VISIBLE);
+                                progressBar_dk.setVisibility(View.VISIBLE);
                                 mAuth.getCurrentUser().sendEmailVerification()
                                         .addOnCompleteListener(new OnCompleteListener<Void>() {
                                             @Override
@@ -196,14 +198,14 @@ public class Register extends AppCompatActivity {
                                                         public void onComplete(@NonNull Task<Void> task) {
                                                             Toast.makeText(Register.this, "Đăng ký thành công!",
                                                                     Toast.LENGTH_LONG).show();
-                                                            progressBar.setVisibility(View.GONE);
+                                                            progressBar_dk.setVisibility(View.GONE);
                                                         }
                                                     });
                                                 }
                                                 else
                                                 {
                                                     Toast.makeText(Register.this, task.getException().getMessage(),Toast.LENGTH_SHORT).show();
-                                                    progressBar.setVisibility(View.GONE);
+                                                    progressBar_dk.setVisibility(View.GONE);
                                                 }
                                             }
                                         });
@@ -211,7 +213,7 @@ public class Register extends AppCompatActivity {
                             else
                             {
                                 Toast.makeText(Register.this, "Đăng ký thất bại!", Toast.LENGTH_SHORT).show();
-                                progressBar.setVisibility(View.GONE);
+                                progressBar_dk.setVisibility(View.GONE);
                             }
                         }
                     });

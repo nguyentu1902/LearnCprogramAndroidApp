@@ -23,9 +23,9 @@ public class StudyViewPagerAdapter extends FragmentStatePagerAdapter {
             case 1:
                 return new AdvancedFragment();
             case 2:
-                return new ExerciseFragment();
+                return new DevCFragment();
             case 3:
-                return new TrickFragment();
+                return new RemindFragment();
         }
         return new BasicFragment();
     }
@@ -45,9 +45,9 @@ public class StudyViewPagerAdapter extends FragmentStatePagerAdapter {
             case 1:
                 return "Nâng Cao";
             case 2:
-                return "Bài Tập";
+                return "Dev-C";
             case 3:
-                return "Tip-Trick";
+                return "Nhắc Nhở";
             default:
                 return "Cơ Bản";
         }

@@ -26,11 +26,13 @@
         android:src="@drawable/dev_splashscreen" />
 
     <ProgressBar
+        android:id="@+id/progress_Splash"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/gifDev"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="60sp" />
+        android:layout_marginTop="60sp"
+        android:indeterminateTint="@color/white"/>
 
     <TextView
         android:layout_width="match_parent"

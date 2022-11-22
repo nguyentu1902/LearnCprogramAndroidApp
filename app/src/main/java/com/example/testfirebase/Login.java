@@ -28,7 +28,6 @@ public class Login extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_login);
 
@@ -93,7 +92,6 @@ public class Login extends AppCompatActivity{
         if (user != null) {
             finish();
             startActivity(new Intent(Login.this, Home.class));
-        } else {
         }
     }
 

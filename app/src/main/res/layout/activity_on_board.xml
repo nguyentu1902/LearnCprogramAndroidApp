@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".FragmentOnBoard.OnBoard">
+
+    <TextView
+        android:id="@+id/txtSkip_onboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Skip"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager_Onboard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/txtBack_onboard"
+        android:layout_below="@id/txtSkip_onboard"
+        android:layout_marginBottom="20dp" />
+
+
+    <me.relex.circleindicator.CircleIndicator
+        android:id="@+id/circleIndicator_Onboard"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_below="@+id/view_pager_Onboard"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="110dp"
+        android:layout_marginRight="110dp"
+        app:ci_drawable="@drawable/custom_circleindicator_onboard"
+        android:background="@drawable/border_circle_indicator_onboard" />
+
+    <TextView
+        android:id="@+id/txtBack_onboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/onboard_left"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Back"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtNext_onboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/onboard_right"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Next"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

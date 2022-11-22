@@ -172,14 +172,15 @@
         android:textSize="12sp"
         android:textStyle="italic" />
 
-    <com.google.android.material.progressindicator.CircularProgressIndicator
+    <ProgressBar
         android:id="@+id/progressBar_dk"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/btnDangKy_dk"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="40sp"
-        android:indeterminate="true"/>
+        android:indeterminate="true"
+        android:indeterminateTint="@color/white" />
 
     <Button
         android:id="@+id/btnDangKy_dk"

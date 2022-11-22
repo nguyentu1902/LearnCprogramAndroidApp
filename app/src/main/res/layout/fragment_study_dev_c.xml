@@ -4,14 +4,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
-    tools:context=".FragmentStudy.TrickFragment">
+    tools:context=".FragmentStudy.DevCFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <WebView
+        android:id="@+id/webView_dev_c"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Tips - Trick"
-        android:textColor="@color/black"
-        android:textSize="20sp"/>
+        android:layout_height="match_parent"/>
 
 </FrameLayout>

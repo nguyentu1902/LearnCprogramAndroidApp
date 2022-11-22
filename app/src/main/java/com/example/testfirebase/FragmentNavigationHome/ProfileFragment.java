@@ -3,6 +3,7 @@ package com.example.testfirebase.FragmentNavigationHome;
 import static android.app.Activity.RESULT_OK;
 
 import android.app.Dialog;
+import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
@@ -28,7 +29,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
 
-import com.example.testfirebase.Login;
+import com.example.testfirebase.FragmentOnBoard.OnBoard;
 import com.example.testfirebase.Object.UserAccount;
 import com.example.testfirebase.R;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -58,6 +59,7 @@ public class ProfileFragment extends Fragment {
             btnDeleteAccount, btnExitnewpw, btnConfirmnewpw, btnExitnewEmail, btnConfirmNewEmail, btnResetEmail;
     private ImageView imgProfile;
     private TextView txtWelcome;
+    private ProgressDialog progressDialog;
 
     private FirebaseUser user;
     private DatabaseReference reference;
@@ -72,6 +74,8 @@ public class ProfileFragment extends Fragment {
         disableEditText();
         disableBtnSaveImg();
         disableBtnSaveInfor();
+
+        progressDialog = new ProgressDialog(getActivity());
 
         user = FirebaseAuth.getInstance().getCurrentUser();
         reference = FirebaseDatabase.getInstance().getReference("Users");
@@ -235,7 +239,11 @@ public class ProfileFragment extends Fragment {
         }
     }
 
+    //tai anh len firebase
     public void upLoadImgtoFireBase(Uri imgUri) {
+        progressDialog.setTitle("Lưu ảnh");
+        progressDialog.setMessage("Vui lòng đợi trong giây lát...");
+        progressDialog.show();
         final StorageReference fileRef = storageReference.child("UserImg/" + userID + "/imgProfile.jpg");
         fileRef.putFile(imgUri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
             @Override
@@ -246,6 +254,7 @@ public class ProfileFragment extends Fragment {
                         Picasso.get().load(uri).into(imgProfile);
                         downloadImg();
                         Toast.makeText(getActivity(), "Cập nhật ảnh thành công!", Toast.LENGTH_SHORT).show();
+                        progressDialog.dismiss();
                     }
                 });
             }
@@ -354,7 +363,7 @@ public class ProfileFragment extends Fragment {
                         if (task.isSuccessful()) {
                             reference.child(userID).removeValue();
                             Toast.makeText(getActivity(), "Tài khoản đã bị xóa!", Toast.LENGTH_SHORT).show();
-                            startActivity(new Intent(getActivity(), Login.class));
+                            startActivity(new Intent(getActivity(), OnBoard.class));
                         } else
                             Toast.makeText(getActivity(), "Xóa thất bại!", Toast.LENGTH_SHORT).show();
                     }
@@ -466,6 +475,9 @@ public class ProfileFragment extends Fragment {
 
     //đổi mật khẩu
     public void resetPassword(String newpw) {
+        progressDialog.setTitle("Đổi mật khẩu");
+        progressDialog.setMessage("Vui lòng đợi trong giây lát...");
+        progressDialog.show();
         AuthCredential credential = EmailAuthProvider.getCredential(user.getEmail(), "0");
         user.reauthenticate(credential).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
@@ -473,11 +485,13 @@ public class ProfileFragment extends Fragment {
                 user.updatePassword(newpw).addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void unused) {
+                        progressDialog.dismiss();
                         Toast.makeText(getActivity(), "Cập nhật mật khẩu thành công!", Toast.LENGTH_SHORT).show();
                     }
                 }).addOnFailureListener(new OnFailureListener() {
                     @Override
                     public void onFailure(@NonNull Exception e) {
+                        progressDialog.dismiss();
                         Toast.makeText(getActivity(), "Cập nhật mật khẩu thất bại!", Toast.LENGTH_SHORT).show();
                     }
                 });
@@ -487,6 +501,9 @@ public class ProfileFragment extends Fragment {
 
     //đổi email
     public void resetEmail(String email) {
+        progressDialog.setTitle("Đổi email");
+        progressDialog.setMessage("Vui lòng đợi trong giây lát...");
+        progressDialog.show();
         AuthCredential credential = EmailAuthProvider.getCredential(user.getEmail(), "0");
         user.reauthenticate(credential).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
@@ -494,12 +511,14 @@ public class ProfileFragment extends Fragment {
                 user.updateEmail(email).addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void unused) {
+                        progressDialog.dismiss();
                         reference.child(userID).child("email").setValue(email);
                         Toast.makeText(getActivity(), "Cập nhật email thành công!", Toast.LENGTH_SHORT).show();
                     }
                 }).addOnFailureListener(new OnFailureListener() {
                     @Override
                     public void onFailure(@NonNull Exception e) {
+                        progressDialog.dismiss();
                         Toast.makeText(getActivity(), "Cập nhật email thất bại!", Toast.LENGTH_SHORT).show();
                     }
                 });

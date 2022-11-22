@@ -31,14 +31,42 @@
     <string name="titleACqueue">Hàng đợi</string>
     <!--    bài học nâng cao  -->
 
+
+
+
+    <!--    bài học nâng cao  -->
+    <string name="titleRMhardskill">Kỹ năng cứng</string>
+    <string name="titleRMsoftskill">Kỹ năng mềm</string>
+    <string name="titleRMmainsubject">Lộ trình - Các môn nền tảng</string>
+    <string name="titleRMcleancode">Code sạch (Clean Code)</string>
+    <string name="titleRMdebugfixbug">Kỹ năng tìm lỗi - gỡ lỗi</string>
+    <!--    bài học nâng cao  -->
+
+
     <!--    tiêu đề toolbar study   -->
 
-
+    <!-- Contact -->
     <string name="email_contact">sing19022001@gmail.com</string>
     <string name="phoneNum_contact">0967163867</string>
-
     <string name="email_contact_title"><u>Địa chỉ email:</u></string>
     <string name="phone_contact_title"><u>Số điện thoại:</u></string>
+    <!-- Contact -->
+
+    <!-- Onboard -->
+    <string name="detail_Onboard_1">Là một ứng dụng mang đến các bài học cơ bản và nâng cao về lập trình C.</string>
+
+    <string name="detail_Onboard_2">Giúp người dùng học tập mọi lúc mọi nơi. Ngoài ra, ứng dụng còn chia sẻ
+        thêm về các kiến thức khác xoay quanh việc học lập trình.</string>
+
+    <string name="detail_Onboard_3">Là một ứng dụng học tập hoàn toàn miễn phí.
+        Chỉ cần email để tạo tài khoản một cách dễ dàng!</string>
+
+    <string name="detail_Onboard_4">Luôn có đội ngũ hỗ trợ và tiếp nhận feedback
+        của người dùng để cải thiện ứng dụng ngày càng tốt hơn!</string>
+
+    <string name="detail_Onboard_5">Nhập thông tin cá nhân > xác nhận thông tin > kiểm tra hộp thư
+        đến của chỉ email vừa nhập > Click vào link để xác nhận tài khoản > hoàn tất đăng ký!</string>
+    <!-- Onboard -->
 
 
 </resources>
